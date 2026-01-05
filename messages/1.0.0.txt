@@ -1,0 +1,19 @@
+## json-with-comments 1.0.0
+
+首次发布！
+
+### 功能特性
+
+- 支持格式化带注释的 JSON 文件（支持 `//`注释）
+- 支持选择区域或整个文件格式化
+- 跨平台快捷键支持（macOS: ⌘+⌥+J, Windows/Linux: Ctrl+Alt+J）
+- 命令面板集成（搜索 "Pretty JSON with Comments"）
+- 智能错误提示，显示 JSON 解析错误的位置
+
+### 使用方法
+
+1. 打开包含注释的 JSON 文件（如 `.sublime-settings`、`.jsonc` 等）
+2. 可选：选中需要格式化的部分
+3. 使用快捷键或命令面板执行格式化
+
+

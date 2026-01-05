@@ -1,0 +1,4 @@
+# This file indicates that this package should not be packaged into a .sublime-package file
+# Package Control will install this package as a directory instead of a zip file
+# This is useful for development packages or packages that need to be editable
+

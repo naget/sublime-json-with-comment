@@ -1,0 +1,11 @@
+[
+    {
+        "keys": ["ctrl+alt+j"],
+        "command": "json_with_comments_pretty",
+        "context": [
+            { "key": "selector", "operator": "equal", "operand": "source.json, source.jsonc, source.json.sublime" }
+        ]
+    }
+]
+
+
