@@ -1,6 +1,6 @@
 ## json-with-comments (Sublime Text plugin)
 
-**json-with-comments** 是一个 Sublime Text 插件，用来格式化“带注释的 JSON”（支持 `//` 和 `/* */` 注释），避免普通 JSON pretty 插件在遇到注释时报错。
+**json-with-comments** 是一个 Sublime Text 插件，用来格式化“带注释的 JSON”（支持 `//` 注释），避免普通 JSON pretty 插件在遇到注释时报错。
 
 ### 功能特性
 
