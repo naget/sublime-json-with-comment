@@ -1,5 +1,75 @@
 ## json-with-comments (Sublime Text plugin)
 
+Language / 语言: **English** | [中文](#zh)
+
+<a id="en"></a>
+## English
+
+**json-with-comments** is a Sublime Text plugin that formats **JSON with comments** (supports `//` comments). It helps avoid errors from regular JSON pretty formatters when comments are present.
+
+### Features
+
+- **Format commented JSON safely**: strips comments first, then pretty-prints via Python’s built-in `json` module.
+- **Selection or whole file**: formats the selection if there is one; otherwise formats the entire file.
+- **Cross-platform key bindings**:
+  - macOS: `⌘ + ⌥ + J`
+  - Windows/Linux: `Ctrl + Alt + J`
+- **Command Palette integration**: search for “**Pretty JSON with Comments**”.
+
+> Note: the current implementation removes comments during formatting (comments will not be preserved in the output). The main goal is to make “commented JSON” formatable. If you prefer to preserve comments, this can be extended in a future version.
+
+### Installation
+
+#### Option 1: Package Control (recommended)
+
+1. Open Sublime Text
+2. Open the Command Palette: `⌘+Shift+P` (macOS) or `Ctrl+Shift+P` (Windows/Linux)
+3. Run `Package Control: Install Package`
+4. Search for `json-with-comments` and install
+5. Done
+
+#### Option 2: Local/development install
+
+1. Clone/copy this repository into Sublime Text’s `Packages` directory, e.g.:
+
+   - macOS: `~/Library/Application Support/Sublime Text/Packages/json-with-comments`
+   - Windows: `%APPDATA%/Sublime Text/Packages/json-with-comments`
+   - Linux: `~/.config/sublime-text/Packages/json-with-comments`
+
+2. Restart Sublime Text. If you can find “**Pretty JSON with Comments**” in the Command Palette, it’s loaded successfully.
+
+### Usage
+
+- **Command Palette**
+  1. Open a commented JSON file (e.g. `.sublime-settings`, `.jsonc`, etc.).
+  2. Optional: select the part you want to format. If nothing is selected, the whole file will be formatted.
+  3. Open the Command Palette (`⌘+Shift+P` / `Ctrl+Shift+P`), search “Pretty JSON with Comments”, and run it.
+
+- **Key binding**
+  - macOS: `⌘ + ⌥ + J`
+  - Windows/Linux: `Ctrl + Alt + J`
+
+### Project structure
+
+This package follows the Package Control convention:
+
+- Main plugin: `json_with_comments.py` (contains the `TextCommand` implementation)
+- Command Palette: `json-with-comments.sublime-commands`
+- Key bindings: `Default (OSX|Windows|Linux).sublime-keymap`
+- Changelog: `messages.json` and `messages/<version>.txt`
+- Docs: `README.md`
+
+### Compatibility
+
+- **Sublime Text 3 / 4**: uses Python’s built-in `json` and minimal standard library utilities, with no third-party dependencies—suitable for Package Control distribution.
+
+---
+
+Language / 语言: [English](#en) | **中文**
+
+<a id="zh"></a>
+## 中文
+
 **json-with-comments** 是一个 Sublime Text 插件，用来格式化“带注释的 JSON”（支持 `//` 注释），避免普通 JSON pretty 插件在遇到注释时报错。
 
 ### 功能特性
