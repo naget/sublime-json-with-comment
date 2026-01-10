@@ -22,11 +22,15 @@ Language / 语言: **English** | [中文](#zh)
 
 #### Option 1: Package Control (recommended)
 
+Since this plugin is not yet in the default Package Control channel, you need to add the repository first:
+
 1. Open Sublime Text
 2. Open the Command Palette: `⌘+Shift+P` (macOS) or `Ctrl+Shift+P` (Windows/Linux)
-3. Run `Package Control: Install Package`
-4. Search for `json-with-comments` and install
-5. Done
+3. Run `Package Control: Add Repository`
+4. Add this repository URL: `https://github.com/naget/sublime-json-with-comment`
+5. Run `Package Control: Install Package`
+6. Search for `json-with-comments` and install
+7. Done
 
 #### Option 2: Local/development install
 
@@ -87,11 +91,15 @@ Language / 语言: [English](#en) | **中文**
 
 #### 方式一：通过 Package Control（推荐）
 
+由于本插件尚未合入 Package Control 默认仓库，需要先添加本仓库地址：
+
 1. 打开 Sublime Text
 2. 按 `⌘+Shift+P`（macOS）或 `Ctrl+Shift+P`（Windows/Linux）打开命令面板
-3. 输入 `Package Control: Install Package` 并回车
-4. 搜索 `json-with-comments` 并安装
-5. 安装完成后即可使用
+3. 输入 `Package Control: Add Repository` 并回车
+4. 添加本仓库地址：`https://github.com/naget/sublime-json-with-comment`
+5. 输入 `Package Control: Install Package` 并回车
+6. 搜索 `json-with-comments` 并安装
+7. 安装完成后即可使用
 
 #### 方式二：本地开发版
 
